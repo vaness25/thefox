@@ -1,4 +1,30 @@
+@font-face {
+	font-family: 'ElegantIcons';
+	src:url('fonts/ElegantIcons.eot');
+	src:url('fonts/ElegantIcons.eot?#iefix') format('embedded-opentype'),
+		url('fonts/ElegantIcons.woff') format('woff'),
+		url('fonts/ElegantIcons.ttf') format('truetype'),
+		url('fonts/ElegantIcons.svg#ElegantIcons') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
 body
 {
     font-family: 'Lato', sans-serif;
+}
+:root
+{
+    /*Couleurs*/
+    --titre-blog-couleur : #2C3E50;
+    --txt-commun-couleur : #A1B1BC;
+    --txt-blanc-couleur : #FFFFFF;
+    --bg-bouton-color : #2C3E50;
+    --hover-color : #1ABC9C;
+    /*Font-weight*/
+    --bold : 700;
+    --regular : 400;
+    --black : 900;
+    /*Font-size*/
+    --size24 : 1.5rem;
+    --size14 : 0.875rem;
 }
