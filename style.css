@@ -72,13 +72,14 @@ p
     justify-content: space-around;
     align-content: center;
     max-width : 1280px;
-    margin: 3rem auto;
+    margin: 0 auto;
     flex-wrap: wrap;
 }
 .colones
 {
     margin-left: 0.5rem;
     margin-right: 0.5rem;
+    margin-top : 3rem;
     max-width : 23.13rem;
 }
 /*------*********************--------blocs de blogs--------********************-------*/
