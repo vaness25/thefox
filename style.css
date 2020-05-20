@@ -8,7 +8,7 @@
 	font-weight: normal;
     font-style: normal;
 }
-/*------------------------------------Généralités-----------------------------------------------*/
+/*------------------------------------Base-----------------------------------------------*/
 body
 {
     font-family: 'Lato', sans-serif;
@@ -39,6 +39,7 @@ main
     --size14 : 0.875rem;
     --size18 : 1.125rem;
 }
+/*----------------------------------Généralités--------------------------------*/
 .titre-blog
 {
     font-size: var(--size24);
@@ -105,9 +106,15 @@ a
  margin-bottom : 1rem;
 }
 
-.bloc-article header div
+.bloc-article header div, .bloc-article header audio
 {
     text-align: center;
+}
+.bloc-article header p, .pub
+{
+    text-align: center;
+    padding-left: 0; 
+    border-top: none;
 }
 .photo
 {
