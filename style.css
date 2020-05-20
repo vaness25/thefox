@@ -1,3 +1,23 @@
+
+/* mis en place des police */
+@font-face {
+    font-family: "Lato-Bold";
+   src: local("Lato-Bold");
+   font-family: "Lato-Regular";
+   src: local("Lato-Regular");
+
+}
+
+#menu1 {
+     font-family: "Lato-Bold";
+}
+
+#menu3 h1 {
+    font-family: "Lato-Regular"
+}
+ /* fin css des police de caracteres */
+
+
 * {
 	margin: 0;
 	padding: 0;
@@ -52,7 +72,7 @@ color: #159880;
 
 
 /*partie2 */
-#ExoPrices {
+#menu2 {
 	position: absolute;
 	width: 1920px;
 	height: 4229px;
