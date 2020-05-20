@@ -72,6 +72,10 @@ a
     margin-top : 2rem;
     margin-bottom : 2rem;
 }
+.read-more a, .read-more:hover a
+{
+    color: var(--txt-blanc-couleur);  
+}
 /*-------------------------Colones------------------------------*/
 .colones-wrap
 {
@@ -125,6 +129,8 @@ a
     border: 0.2rem solid var(--invisible-color);
     display: inline-block;
     margin-top: 2rem;
+    margin-left : 1rem;
+    margin-right : 1rem;
 }
 .photo-portrait
 {
@@ -146,8 +152,8 @@ a
     border: 0.2rem solid var(--invisible-color);
     display: inline-block;
     margin-top: 3rem;
-    margin-left : 1rem;
-    margin-right : 1rem;
+    margin-left : 1.5rem;
+    margin-right : 1.5rem;
 }
 audio
 {
@@ -171,13 +177,16 @@ audio
 .auteur:first-of-type>p:nth-child(1)
 {
     border-right: 0.1rem solid #ECF0F1;
-    border-right-style: 0.3rem;
 }
 .like p
 {
     padding-right: 0.4rem;
     padding-left: 0.4rem;
     border-top: none;
+}
+.like>p:nth-child(1), .like>p:nth-child(2)
+{
+    border-right: 0.1rem solid #ECF0F1;
 }
 .photo>p
 {
@@ -207,6 +216,7 @@ audio
 .read-more:hover
 {
     background-color: var(--hover-color);
+    cursor: pointer;
 }
 .photo:hover
 {
@@ -265,4 +275,34 @@ audio
 a:hover
 {
     color : var(--hover-color);
+}
+/*------------------------------------Slider-------------------------*/
+.slider-paysage
+{
+    width : 330px;
+    height : 250px;
+    margin: 1rem auto;
+    background-image: url(media/dental.jpg);
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+.slider-portrait
+{
+    width : 330px;
+    height : 330px;
+    margin: 1rem auto;
+    background-image: url(media/noix-lavage.jpg);
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+.slider-paysage p, .slider-portrait p
+{
+    border-style: none;
+    color : var(--titre-blog-couleur);
+    background-color: var(--txt-blanc-couleur);
+    width : 1.875rem;
+    height : 1.875rem;
+    align-self: center;
 }
