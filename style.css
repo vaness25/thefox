@@ -306,3 +306,34 @@ a:hover
     height : 1.875rem;
     align-self: center;
 }
+/*-------------------------------------------Archives-----------------------------------------*/
+.archive
+{
+    display : flex;
+    justify-content: space-between;
+    align-content: center;
+}
+.archive ul
+{
+    display : flex;
+    justify-content: space-between;
+    align-content: center;
+    list-style: none; 
+}
+.archive ul li
+{
+    color : var(--txt-blanc-couleur);
+    background-color: var(--bg-bouton-color);
+    border-radius: 3px;
+    padding : 1rem;
+    margin : 1rem;
+}
+.archive ul li:hover
+{
+    color: var(--hover-color);
+    cursor: pointer;
+}
+.archive>p:nth-child(1)
+{
+    margin : 3rem;
+}
