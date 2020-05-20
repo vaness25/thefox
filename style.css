@@ -167,6 +167,7 @@ audio
     display : block;
     background-color: var(--bg-audio);
     padding : 1rem;
+    margin-top: 1remgit ci;
 }
 
  .bloc-article p
@@ -348,4 +349,16 @@ a:hover
 span
 {
     color : var(--hover-color);
+}
+@media screen and (min-width : 480px) and (max-width : 991px)
+{
+    .colones
+    {
+        display : flex;
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width : 479px)
+{
+    
 }
