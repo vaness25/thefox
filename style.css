@@ -343,4 +343,9 @@ a:hover
 .archive>p:nth-child(1)
 {
     margin : 3rem;
+    font-weight: var(--bold);
+}
+span
+{
+    color : var(--hover-color);
 }
