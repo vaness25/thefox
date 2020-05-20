@@ -29,6 +29,7 @@ main
     --hover-color : #1ABC9C;
     --hover-image : #222533;
     --bordure-couleur : #ECF0F1;
+    --invisible-color :rgb(255, 255, 255,0);
     /*Font-weight*/
     --bold : 700;
     --regular : 400;
@@ -36,6 +37,7 @@ main
     /*Font-size*/
     --size24 : 1.5rem;
     --size14 : 0.875rem;
+    --size18 : 1.125rem;
 }
 .titre-blog
 {
@@ -49,21 +51,26 @@ p
     font-weight : var(--regular);
     color : var(--txt-article-couleur);
 }
+a
+{
+    text-decoration: none;
+    color : var(--txt-article-couleur);
+}
 .read-more
 {
     font-size: var(--size14);
     font-weight : var(--black);
     color: var(--txt-blanc-couleur);
     background-color: var(--bg-bouton-color);
+    width : 90px;
+    text-align: center;
     padding-top : 0.8125rem;
     padding-bottom : 0.8125rem;
     padding-left: 0.84375rem;
     padding-right: 0.84375rem;
     border-radius: 3px;
-}
-.read-more:hover
-{
-    background-color: var(--hover-color);
+    margin-top : 2rem;
+    margin-bottom : 2rem;
 }
 /*-------------------------Colones------------------------------*/
 .colones-wrap
@@ -83,6 +90,7 @@ p
     max-width : 23.13rem;
 }
 /*------*********************--------blocs de blogs--------********************-------*/
+/*----------------------------------------Généralités, mise en forme-----------------------------------*/
 .bloc-article
 {
  border: 0.1rem solid #ECF0F1;
@@ -92,6 +100,7 @@ p
  background-color: #FFFFFF;
  margin-bottom : 1rem;
 }
+
 .bloc-article header div
 {
     text-align: center;
@@ -103,14 +112,157 @@ p
     margin: 1rem auto;
     background-image: url(media/dental.jpg);
 }
-.photo:hover
+.photo p
 {
-    background-image: none;
-    background-color: var(--hover-image);
+    color : var(--invisible-color);
+}
+.photo a
+{
+    color : var(--invisible-color);
+    border-radius:50%;
+    width:2rem;
+    height:2rem;
+    border: 0.2rem solid var(--invisible-color);
+    display: inline-block;
+    margin-top: 2rem;
+}
+.photo-portrait
+{
+    width : 330px;
+    height : 330px;
+    margin: 1rem auto;
+    background-image: url(media/noix-lavage.jpg);
+}
+.photo-portrait p
+{
+    color : var(--invisible-color);
+}
+.photo-portrait a
+{
+    color : var(--invisible-color);
+    border-radius:50%;
+    width:2rem;
+    height:2rem;
+    border: 0.2rem solid var(--invisible-color);
+    display: inline-block;
+    margin-top: 3rem;
+    margin-left : 1rem;
+    margin-right : 1rem;
 }
 audio
 {
     display : block;
     background-color: var(--bg-audio);
     padding : 1rem;
+}
+
+ .bloc-article p
+{
+    padding-right: 0.8rem;
+    padding-left: 0.8rem;
+    padding-top: 0.8rem;
+    border-top: 0.1rem solid #ECF0F1;
+
+}
+.auteur:first-of-type>p
+{
+    border-top: none;
+}
+.auteur:first-of-type>p:nth-child(1)
+{
+    border-right: 0.1rem solid #ECF0F1;
+    border-right-style: 0.3rem;
+}
+.like p
+{
+    padding-right: 0.4rem;
+    padding-left: 0.4rem;
+    border-top: none;
+}
+.photo>p
+{
+    border-top: none;
+}
+.photo-portrait>p
+{
+    border-top: none;
+}
+/*-----------------------------------Flex dans les blocs articles------------------------------*/
+.auteur
+{
+    display : flex;
+    justify-content: left;
+    flex-wrap: wrap;
+}
+.like
+{
+    display : flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-top: 0.1rem solid #ECF0F1;
+    border-bottom: 0.1rem solid #ECF0F1;
+    margin-bottom: 0.5rem;
+}
+/*------------------------------------HOVER---------------------------------*/
+.read-more:hover
+{
+    background-color: var(--hover-color);
+}
+.photo:hover
+{
+    background-image: none;
+    background-color: var(--hover-image);
+}
+.photo:hover a
+{
+    color : var(--txt-blanc-couleur);
+    font-weight: var(--bold);
+    font-size: var(--size18);
+    border: 0.2rem solid var(--txt-blanc-couleur);
+}
+.photo:hover p
+{
+    color : var(--txt-blanc-couleur);
+    font-family: 'Lato', sans-serif;
+    font-weight: var(--bold);
+    font-size: var(--size18);
+}
+.photo a:hover
+{
+    background-color: var(--hover-color);
+    border-color: var(--hover-color);
+}
+
+.photo-portrait:hover
+{
+    background-image: none;
+    background-color: var(--hover-image);
+}
+.photo-portrait:hover a
+{
+    color : var(--txt-blanc-couleur);
+    font-weight: var(--bold);
+    font-size: var(--size18);
+    border: 0.2rem solid var(--txt-blanc-couleur);
+}
+.photo-portrait:hover p
+{
+    color : var(--txt-blanc-couleur);
+    font-family: 'Lato', sans-serif;
+    font-weight: var(--bold);
+    font-size: var(--size18);
+}
+.photo-portrait a:hover
+{
+    background-color: var(--hover-color);
+    border-color: var(--hover-color);
+}
+.only-text:hover, .only-text:hover h2, .only-text:hover p
+{
+    background-color: var(--bg-bouton-color);
+    color: var(--txt-blanc-couleur);
+}
+a:hover
+{
+    color : var(--hover-color);
 }
