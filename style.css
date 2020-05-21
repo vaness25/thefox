@@ -127,7 +127,7 @@ a
 {
     color : var(--invisible-color);
 }
-.photo a
+.photo div
 {
     color : var(--invisible-color);
     border-radius:50%;
@@ -231,7 +231,7 @@ audio
     background-image: none;
     background-color: var(--hover-image);
 }
-.photo:hover a
+.photo:hover div
 {
     color : var(--txt-blanc-couleur);
     font-weight: var(--bold);
@@ -245,7 +245,7 @@ audio
     font-weight: var(--bold);
     font-size: var(--size18);
 }
-.photo a:hover
+.photo div:hover
 {
     background-color: var(--hover-color);
     border-color: var(--hover-color);
@@ -283,6 +283,20 @@ audio
 a:hover
 {
     color : var(--hover-color);
+}
+.photo:hover div .chaine, .chaine:hover /*------------------/!\NE MARCHE PAS/!\------------------------*/
+{
+    
+    background-image: url(media/link.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.loupe /*------------------/!\NE MARCHE PAS/!\------------------------*/
+{
+    
+    background-image: url(media/search.svg);
+    background-position: center;
+    background-repeat: no-repeat;
 }
 /*------------------------------------Slider-------------------------*/
 .slider-paysage
