@@ -1,178 +1,212 @@
-
 /* mis en place des police */
+
 @font-face {
     font-family: "Lato-Bold";
-   src: local("Lato-Bold");
-   font-family: "Lato-Regular";
-   src: local("Lato-Regular");
-
+    src: local("Lato-Bold");
+    font-family: "Lato-Regular";
+    src: local("Lato-Regular");
+   
 }
 
 #menu1 {
-     font-family: "Lato-Bold";
+    font-family: "Lato-Bold";
 }
 
 #menu3 h1 {
     font-family: "Lato-Regular"
 }
- /* fin css des police de caracteres */
 
+
+
+
+
+/* fin css des police  */
 
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     border: none;
-    
 }
-#menu1 > h1 {
+
+#menu1>h1 {
     font-size: 13px;
     margin-left: 20rem;
-    
-
 }
+
 .arrow {
     border: solid black;
     border-width: 0 3px 3px 0;
     display: inline-block;
     padding: 5px;
     margin-left: 3rem;
-  }
-  .down {
+}
+
+.down {
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
-  }
-  #menu1 {
-      display: flex;
-      flex-direction: row;
-      padding-right:  5rem;
-      margin-right: 10rem;
-      
-  }
+}
 
-  #macarte {
-      margin-left: 25rem;
-  }
-  #hr1 {
+#menu1 {
+    display: flex;
+    flex-direction: row;
+    padding-right: 5rem;
+    margin-right: 10rem;
+    align-items: center;
+}
+
+#macarte {
+    margin-left: 25rem;
+}
+
+#hr1 {
     border: 1px solid grey;
     margin-top: 2rem;
-  }
-  #LineMenu li a {
-      text-decoration: none;
-      color: grey;
-     
-  }
-  /* selecteur pour image */
+}
+
+#LineMenu li a {
+    text-decoration: none;
+    color: grey;
+}
+
+
+
 #fox {
     float: left;
 }
-#LineMenu li a  :hover {
-color: #159880;
+
+#LineMenu li a :hover {
+    color: #159880;
+}
+
+ .fab {
+     margin: 5px;
+ }
+.fas {
+    margin: 5px;
 }
 
 
 /*partie2 */
+
 #menu2 {
-	position: absolute;
-	width: 1920px;
-	height: 4229px;
-	background-color: rgba(255,255,255,1);
-	overflow: hidden;
-/*	--web-view-name: 06-Prices; 
+    position: absolute;
+    width: 1920px;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 1);
+    overflow: hidden;
+    /*	--web-view-name: 06-Prices; 
 	--web-view-id: ID06_Prices;
 	--web-scale-on-resize: true;
 	--web-enable-deep-linking: true;*/
 }
 
 #MenuBar {
- 	position: absolute; 
-	width: 641px;
-  /*  height: 69.689px; */
-	left: 390px;
-	top: 0px;
-	overflow: visible;
+    position: absolute;
+    width: 641px;
+    /*  height: 69.689px; */
+    left: 390px;
+    top: 0px;
+    overflow: visible;
 }
-#SectionsMenuBar {
-	
-	width: 641px;
-	height: 69.689px;
-	left: 0px;
-	top: 0px;
-	overflow: visible;
+
+#SectionsMenuzBar {
+    width: 641px;
+    height: 69.689px;
+    left: 0px;
+    top: 0px;
+    overflow: visible;
 }
+
 #LogoCompany {
-	position: absolute;
-	width: 119px;
-	height: 39.689px;
-	
-	top: 30px;
+    position: absolute;
+    width: 119px;
+    height: 39.689px;
+    top: 30px;
     overflow: visible;
     right: 100%;
     margin-right: 5rem;
 }
+
 #Menu {
-	width: 481px;
-	height: 67px;
-	left: 160px;
-	top: 0px;
+    width: 481px;
+    height: 67px;
+    left: 160px;
+    top: 0px;
     overflow: visible;
     margin-right: 5rem;
-    
 }
 
 ul {
-    list-style-type: none; /*Ce n'est pas nécessaire c'est la valeur par défaut*/
-    position: absolute;  
-    left: 15px;
-    top: 44px;
+    list-style-type: none;
+    /*Ce n'est pas nécessaire c'est la valeur par défaut*/
     overflow: visible;
-  	white-space: nowrap;
-	line-height: 21px;
-	margin-top: -2.5px;
-	text-align: left;
-	color: rgba(91,87,102,1);
-	word-spacing: 2rem;
-	font-family: Nunito-Regular;
+    white-space: nowrap;
+    line-height: 21px;
+    margin-top: -2.5px;
+    text-align: left;
+    color: rgba(91, 87, 102, 1);
+    word-spacing: 2rem;
+    font-family: Nunito-Regular;
     font-style: normal;
     font-weight: normal;
-	font-size: 16px;
+    font-size: 16px;
+}
+
+#menu2 ul {
+    position: absolute;
+    left: 15px;
+    top: 44px;
 }
 
 ul li {
-  display: inline-block;
+    display: inline-block;
 }
 
 #ColorServices {
     font-size: 17px;
-	color: rgba(85,77,137,1);
+    color: rgba(85, 77, 137, 1);
 }
 
 #hr2 {
     border: 1px solid grey;
     margin-top: 7rem;
-  }
-
-  /* partie 3 */
-
-  #menu3 {
-     
-      width: 100%;
-      
-      height: 200rem;
-      overflow: visible;
-  }
-
-  #menu3 > h1 {
-  
-   margin-top: 2rem;
-   margin-left: 12rem;
-  }
+}
 
 
- /* partie footer */
+/* partie 3 */
 
-  #FOOTER_STYLE {
-	position: absolute;
+#menu3 {
+    position: absolute;
+    left: 190px;
+    width: 65rem;
+    /* width: 100%;
+    height: 200rem;
+	overflow: visible; */
+}
+
+#menu3 ul {
+    padding-top: 0.6rem;
+}
+
+.leftsection {
+    float: left;
+}
+
+.rightsection {
+    float: right;
+}
+
+#menu3>h1 {
+    margin-top: 2rem;
+    margin-left: 12rem;
+}
+
+
+/* partie footer */
+
+#FOOTER_STYLE {
+    position: absolute;
     width: -webkit-fill-available;
     max-width: 100%;
     height: 568px;
@@ -180,594 +214,652 @@ ul li {
     top: 3486px;
     overflow: hidden;
     box-sizing: border-box;
-    background-color: rgba(34,37,51,1);
-	}
-	#Blog {
-		position: absolute;
+    background-color: rgba(34, 37, 51, 1);
+}
+
+#Blog {
+    position: absolute;
     width: 270.578px;
     height: 269.078px;
     left: 144.422px;
     top: 97.086px;
     overflow: visible;
-	}
-	#Title {
-		position: absolute;
-		width: 154px;
-		height: 28.914px;
-		left: 0px;
-		top: 0px;
-		overflow: visible;
-	}
-	#RECENT_POST {
-		position: absolute;
-		left: 0px;
-		top: 0px;
-		overflow: visible;
-		width: 155px;
-		white-space: nowrap;
-		line-height: 24px;
-		margin-top: -4px;
-		text-align: left;
-		font-family: Lato-Black;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 16px;
-		color: rgba(255,255,255,1);
-		letter-spacing: 3px;
-	}
-	.Rectangle_32 {
-		position: absolute;
-		overflow: visible;
-		width: 70px;
-		height: 3px;
-		left: 0.578px;
-		top: 25.914px;
-	}
-	#Post {
-		position: absolute;
-		width: 270px;
-		height: 63.836px;
-		left: 0.578px;
-		top: 64.078px;
-		overflow: visible;
-	}
-	#Amazing_Standard_Post_26_May__ {
-		position: absolute;
-		left: 0.25px;
-		top: 0px;
-		overflow: visible;
-		width: 166px;
-		white-space: nowrap;
-		line-height: 24px;
-		margin-top: -4px;
-		text-align: left;
-		font-family: Lato-Bold;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 16px;
-		color: rgba(236,240,241,1);
-	}
-	#Shape_180 {
-		opacity: 0.502;
-	}
-	.Shape_180 {
-		position: absolute;
-		overflow: visible;
-		width: 270px;
-		height: 1px;
-		left: 0px;
-		top: 62.836px;
-	}
-	#Post_copy {
-		position: absolute;
-		width: 270px;
-		height: 63.836px;
-		left: 0.578px;
-		top: 145.078px;
-		overflow: visible;
-	}
-	#Amazing_Text_Post_26_May__2017 {
-		position: absolute;
-		left: 0.25px;
-		top: 0px;
-		overflow: visible;
-		width: 132px;
-		white-space: nowrap;
-		line-height: 24px;
-		margin-top: -4px;
-		text-align: left;
-		font-family: Lato-Bold;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 16px;
-		color: rgba(26,188,156,1);
-	}
-	#Shape_180_kd {
-		opacity: 0.502;
-	}
-	.Shape_180_kd {
-		position: absolute;
-		overflow: visible;
-		width: 270px;
-		height: 1px;
-		left: 0px;
-		top: 62.836px;
-	}
-	#Post_copy_2 {
-		position: absolute;
-		width: 142px;
-		height: 43px;
-		left: 0.828px;
-		top: 226.078px;
-		overflow: visible;
-	}
-	#Amazing_Video_Post_26_May__201 {
-		position: absolute;
-		left: 0px;
-		top: 0px;
-		overflow: visible;
-		width: 143px;
-		white-space: nowrap;
-		line-height: 24px;
-		margin-top: -4px;
-		text-align: left;
-		font-family: Lato-Bold;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 16px;
-		color: rgba(236,240,241,1);
-	}
-	#Comment {
-		position: absolute;
+}
+
+#Title {
+    position: absolute;
+    width: 154px;
+    height: 28.914px;
+    left: 0px;
+    top: 0px;
+    overflow: visible;
+}
+
+#RECENT_POST {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    overflow: visible;
+    width: 155px;
+    white-space: nowrap;
+    line-height: 24px;
+    margin-top: -4px;
+    text-align: left;
+    font-family: Lato-Black;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 1);
+    letter-spacing: 3px;
+}
+
+.Rectangle_32 {
+    position: absolute;
+    overflow: visible;
+    width: 70px;
+    height: 3px;
+    left: 0.578px;
+    top: 25.914px;
+}
+
+#Post {
+    position: absolute;
+    width: 270px;
+    height: 63.836px;
+    left: 0.578px;
+    top: 64.078px;
+    overflow: visible;
+}
+
+#Amazing_Standard_Post_26_May__ {
+    position: absolute;
+    left: 0.25px;
+    top: 0px;
+    overflow: visible;
+    width: 166px;
+    white-space: nowrap;
+    line-height: 24px;
+    margin-top: -4px;
+    text-align: left;
+    font-family: Lato-Bold;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: rgba(236, 240, 241, 1);
+}
+
+#Shape_180 {
+    opacity: 0.502;
+}
+
+.Shape_180 {
+    position: absolute;
+    overflow: visible;
+    width: 270px;
+    height: 1px;
+    left: 0px;
+    top: 62.836px;
+}
+
+#Post_copy {
+    position: absolute;
+    width: 270px;
+    height: 63.836px;
+    left: 0.578px;
+    top: 145.078px;
+    overflow: visible;
+}
+
+#Amazing_Text_Post_26_May__2017 {
+    position: absolute;
+    left: 0.25px;
+    top: 0px;
+    overflow: visible;
+    width: 132px;
+    white-space: nowrap;
+    line-height: 24px;
+    margin-top: -4px;
+    text-align: left;
+    font-family: Lato-Bold;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: rgba(26, 188, 156, 1);
+}
+
+#Shape_180_kd {
+    opacity: 0.502;
+}
+
+.Shape_180_kd {
+    position: absolute;
+    overflow: visible;
+    width: 270px;
+    height: 1px;
+    left: 0px;
+    top: 62.836px;
+}
+
+#Post_copy_2 {
+    position: absolute;
+    width: 142px;
+    height: 43px;
+    left: 0.828px;
+    top: 226.078px;
+    overflow: visible;
+}
+
+#Amazing_Video_Post_26_May__201 {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    overflow: visible;
+    width: 143px;
+    white-space: nowrap;
+    line-height: 24px;
+    margin-top: -4px;
+    text-align: left;
+    font-family: Lato-Bold;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: rgba(236, 240, 241, 1);
+}
+
+#Comment {
+    position: absolute;
     width: 270.578px;
     height: 269.078px;
     left: 451.422px;
     top: 97.086px;
     overflow: visible;
-	}
-	#Title_kh {
-		position: absolute;
-		width: 226px;
-		height: 28.914px;
-		left: 0px;
-		top: 0px;
-		overflow: visible;
-	}
-	#RECENT_COMMENTS {
-		position: absolute;
-		left: 0px;
-		top: 0px;
-		overflow: visible;
-		width: 227px;
-		white-space: nowrap;
-		line-height: 24px;
-		margin-top: -4px;
-		text-align: left;
-		font-family: Lato-Black;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 16px;
-		color: rgba(255,255,255,1);
-		letter-spacing: 3px;
-	}
-	.Rectangle_32_kj {
-		position: absolute;
-		overflow: visible;
-		width: 70px;
-		height: 3px;
-		left: 0.578px;
-		top: 25.914px;
-	}
-	#Post_kk {
-		position: absolute;
-		width: 270px;
-		height: 63.836px;
-		left: 0.578px;
-		top: 64.078px;
-		overflow: visible;
-	}
-	#Tran_Mau_Tri_Tam_On_Blog_Title {
-		position: absolute;
-		left: 0.25px;
-		top: 0px;
-		overflow: visible;
-		width: 183px;
-		white-space: nowrap;
-		line-height: 24px;
-		margin-top: -4px;
-		text-align: left;
-		font-family: Lato-Bold;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 16px;
-		color: rgba(236,240,241,1);
-	}
-	#Shape_180_km {
-		opacity: 0.502;
-	}
-	.Shape_180_km {
-		position: absolute;
-		overflow: visible;
-		width: 270px;
-		height: 1px;
-		left: 0px;
-		top: 62.836px;
-	}
-	#Post_copy_kn {
-		position: absolute;
-		width: 270px;
-		height: 63.836px;
-		left: 0.578px;
-		top: 145.078px;
-		overflow: visible;
-	}
-	#Sam_Isbister_On_Blog_Title_Ama {
-		position: absolute;
-		left: 0.25px;
-		top: 0px;
-		overflow: visible;
-		width: 183px;
-		white-space: nowrap;
-		line-height: 24px;
-		margin-top: -4px;
-		text-align: left;
-		font-family: Lato-Bold;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 16px;
-		color: rgba(236,240,241,1);
-	}
-	#Shape_180_kp {
-		opacity: 0.502;
-	}
-	.Shape_180_kp {
-		position: absolute;
-		overflow: visible;
-		width: 270px;
-		height: 1px;
-		left: 0px;
-		top: 62.836px;
-	}
-	#Post_copy_2_kq {
-		position: absolute;
-		width: 182px;
-		height: 43px;
-		left: 0.828px;
-		top: 226.078px;
-		overflow: visible;
-	}
-	#Wjnd_Baby_On_Blog_Title_Amazin {
-		position: absolute;
-		left: 0px;
-		top: 0px;
-		overflow: visible;
-		width: 183px;
-		white-space: nowrap;
-		line-height: 24px;
-		margin-top: -4px;
-		text-align: left;
-		font-family: Lato-Bold;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 16px;
-		color: rgba(236,240,241,1);
-	}
-	#Archives {
-		position: absolute;
-		width: 270.578px;
-		height: 269.078px;
-		left: 753.422px;
-		top: 97.086px;
-		overflow: visible;
-	}
-	#Title_kt {
-		position: absolute;
-		width: 113px;
-		height: 28.914px;
-		left: 0px;
-		top: 0px;
-		overflow: visible;
-	}
-	#ARCHIVES {
-		position: absolute;
-		left: 0px;
-		top: 0px;
-		overflow: visible;
-		width: 114px;
-		white-space: nowrap;
-		line-height: 24px;
-		margin-top: -4px;
-		text-align: left;
-		font-family: Lato-Black;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 16px;
-		color: rgba(255,255,255,1);
-		letter-spacing: 3px;
-	}
-	.Rectangle_32_kv {
-		position: absolute;
-		overflow: visible;
-		width: 70px;
-		height: 3px;
-		left: 0.578px;
-		top: 25.914px;
-	}
-	#Post_kw {
-		position: absolute;
-		width: 270px;
-		height: 63.836px;
-		left: 0.578px;
-		top: 64.078px;
-		overflow: visible;
-	}
-	#March_2017_1509_Posted {
-		position: absolute;
-		left: 0.25px;
-		top: 0px;
-		overflow: visible;
-		width: 88px;
-		white-space: nowrap;
-		line-height: 24px;
-		margin-top: -4px;
-		text-align: left;
-		font-family: Lato-Bold;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 16px;
-		color: rgba(236,240,241,1);
-	}
-	#Shape_180_ky {
-		opacity: 0.502;
-	}
-	.Shape_180_ky {
-		position: absolute;
-		overflow: visible;
-		width: 270px;
-		height: 1px;
-		left: 0px;
-		top: 62.836px;
-	}
-	#Post_copy_kz {
-		position: absolute;
-		width: 270px;
-		height: 63.836px;
-		left: 0.578px;
-		top: 145.078px;
-		overflow: visible;
-	}
-	#February_2017_1109_Posted {
-		position: absolute;
-		left: 0.25px;
-		top: 0px;
-		overflow: visible;
-		width: 105px;
-		white-space: nowrap;
-		line-height: 24px;
-		margin-top: -4px;
-		text-align: left;
-		font-family: Lato-Bold;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 16px;
-		color: rgba(236,240,241,1);
-	}
-	#Shape_180_k {
-		opacity: 0.502;
-	}
-	.Shape_180_k {
-		position: absolute;
-		overflow: visible;
-		width: 270px;
-		height: 1px;
-		left: 0px;
-		top: 62.836px;
-	}
-	#Post_copy_2_k {
-		position: absolute;
-		width: 96px;
-		height: 43px;
-		left: 0.828px;
-		top: 226.078px;
-		overflow: visible;
-	}
-	#January_2017_1509_Posted {
-		position: absolute;
-		left: 0px;
-		top: 0px;
-		overflow: visible;
-		width: 97px;
-		white-space: nowrap;
-		line-height: 24px;
-		margin-top: -4px;
-		text-align: left;
-		font-family: Lato-Bold;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 16px;
-		color: rgba(236,240,241,1);
-	}
-	#About {
-		position: absolute;
+}
+
+#Title_kh {
+    position: absolute;
+    width: 226px;
+    height: 28.914px;
+    left: 0px;
+    top: 0px;
+    overflow: visible;
+}
+
+#RECENT_COMMENTS {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    overflow: visible;
+    width: 227px;
+    white-space: nowrap;
+    line-height: 24px;
+    margin-top: -4px;
+    text-align: left;
+    font-family: Lato-Black;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 1);
+    letter-spacing: 3px;
+}
+
+.Rectangle_32_kj {
+    position: absolute;
+    overflow: visible;
+    width: 70px;
+    height: 3px;
+    left: 0.578px;
+    top: 25.914px;
+}
+
+#Post_kk {
+    position: absolute;
+    width: 270px;
+    height: 63.836px;
+    left: 0.578px;
+    top: 64.078px;
+    overflow: visible;
+}
+
+#Tran_Mau_Tri_Tam_On_Blog_Title {
+    position: absolute;
+    left: 0.25px;
+    top: 0px;
+    overflow: visible;
+    width: 183px;
+    white-space: nowrap;
+    line-height: 24px;
+    margin-top: -4px;
+    text-align: left;
+    font-family: Lato-Bold;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: rgba(236, 240, 241, 1);
+}
+
+#Shape_180_km {
+    opacity: 0.502;
+}
+
+.Shape_180_km {
+    position: absolute;
+    overflow: visible;
+    width: 270px;
+    height: 1px;
+    left: 0px;
+    top: 62.836px;
+}
+
+#Post_copy_kn {
+    position: absolute;
+    width: 270px;
+    height: 63.836px;
+    left: 0.578px;
+    top: 145.078px;
+    overflow: visible;
+}
+
+#Sam_Isbister_On_Blog_Title_Ama {
+    position: absolute;
+    left: 0.25px;
+    top: 0px;
+    overflow: visible;
+    width: 183px;
+    white-space: nowrap;
+    line-height: 24px;
+    margin-top: -4px;
+    text-align: left;
+    font-family: Lato-Bold;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: rgba(236, 240, 241, 1);
+}
+
+#Shape_180_kp {
+    opacity: 0.502;
+}
+
+.Shape_180_kp {
+    position: absolute;
+    overflow: visible;
+    width: 270px;
+    height: 1px;
+    left: 0px;
+    top: 62.836px;
+}
+
+#Post_copy_2_kq {
+    position: absolute;
+    width: 182px;
+    height: 43px;
+    left: 0.828px;
+    top: 226.078px;
+    overflow: visible;
+}
+
+#Wjnd_Baby_On_Blog_Title_Amazin {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    overflow: visible;
+    width: 183px;
+    white-space: nowrap;
+    line-height: 24px;
+    margin-top: -4px;
+    text-align: left;
+    font-family: Lato-Bold;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: rgba(236, 240, 241, 1);
+}
+
+#Archives {
+    position: absolute;
+    width: 270.578px;
+    height: 269.078px;
+    left: 753.422px;
+    top: 97.086px;
+    overflow: visible;
+}
+
+#Title_kt {
+    position: absolute;
+    width: 113px;
+    height: 28.914px;
+    left: 0px;
+    top: 0px;
+    overflow: visible;
+}
+
+#ARCHIVES {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    overflow: visible;
+    width: 114px;
+    white-space: nowrap;
+    line-height: 24px;
+    margin-top: -4px;
+    text-align: left;
+    font-family: Lato-Black;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 1);
+    letter-spacing: 3px;
+}
+
+.Rectangle_32_kv {
+    position: absolute;
+    overflow: visible;
+    width: 70px;
+    height: 3px;
+    left: 0.578px;
+    top: 25.914px;
+}
+
+#Post_kw {
+    position: absolute;
+    width: 270px;
+    height: 63.836px;
+    left: 0.578px;
+    top: 64.078px;
+    overflow: visible;
+}
+
+#March_2017_1509_Posted {
+    position: absolute;
+    left: 0.25px;
+    top: 0px;
+    overflow: visible;
+    width: 88px;
+    white-space: nowrap;
+    line-height: 24px;
+    margin-top: -4px;
+    text-align: left;
+    font-family: Lato-Bold;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: rgba(236, 240, 241, 1);
+}
+
+#Shape_180_ky {
+    opacity: 0.502;
+}
+
+.Shape_180_ky {
+    position: absolute;
+    overflow: visible;
+    width: 270px;
+    height: 1px;
+    left: 0px;
+    top: 62.836px;
+}
+
+#Post_copy_kz {
+    position: absolute;
+    width: 270px;
+    height: 63.836px;
+    left: 0.578px;
+    top: 145.078px;
+    overflow: visible;
+}
+
+#February_2017_1109_Posted {
+    position: absolute;
+    left: 0.25px;
+    top: 0px;
+    overflow: visible;
+    width: 105px;
+    white-space: nowrap;
+    line-height: 24px;
+    margin-top: -4px;
+    text-align: left;
+    font-family: Lato-Bold;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: rgba(236, 240, 241, 1);
+}
+
+#Shape_180_k {
+    opacity: 0.502;
+}
+
+.Shape_180_k {
+    position: absolute;
+    overflow: visible;
+    width: 270px;
+    height: 1px;
+    left: 0px;
+    top: 62.836px;
+}
+
+#Post_copy_2_k {
+    position: absolute;
+    width: 96px;
+    height: 43px;
+    left: 0.828px;
+    top: 226.078px;
+    overflow: visible;
+}
+
+#January_2017_1509_Posted {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    overflow: visible;
+    width: 97px;
+    white-space: nowrap;
+    line-height: 24px;
+    margin-top: -4px;
+    text-align: left;
+    font-family: Lato-Bold;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: rgba(236, 240, 241, 1);
+}
+
+#About {
+    position: absolute;
     width: 270.578px;
     height: 378.475px;
     left: 1053.422px;
     top: 97.086px;
     overflow: visible;
 }
-	
-	#Title_k {
-		position: absolute;
-		width: 176px;
-		height: 28.914px;
-		left: 0px;
-		top: 0px;
-		overflow: visible;
-	}
-	#ABOUT_THEFOX {
-		position: absolute;
-		left: 0px;
-		top: 0px;
-		overflow: visible;
-		width: 177px;
-		white-space: nowrap;
-		line-height: 24px;
-		margin-top: -4px;
-		text-align: left;
-		font-family: Lato-Black;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 16px;
-		color: rgba(255,255,255,1);
-		letter-spacing: 3px;
-	}
-	.Rectangle_32_k {
-		position: absolute;
-		overflow: visible;
-		width: 70px;
-		height: 3px;
-		left: 0.578px;
-		top: 25.914px;
-	}
-	#Post_k {
-		position: absolute;
-		width: 270px;
-		height: 314.397px;
-		left: 0.578px;
-		top: 64.078px;
-		overflow: visible;
-	}
-	#Designed_by_Tam_Tran_The_Best_ {
-		position: absolute;
-		left: 0.25px;
-		top: 0px;
-		overflow: visible;
-		width: 232px;
-		white-space: nowrap;
-		line-height: 24px;
-		margin-top: -4px;
-		text-align: left;
-		font-family: Lato-Bold;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 16px;
-		color: rgba(236,240,241,1);
-	}
-	#Shape_180_la {
-		opacity: 0.502;
-	}
-	.Shape_180_la {
-		position: absolute;
-		overflow: visible;
-		width: 270px;
-		height: 1px;
-		left: 0px;
-		top: 62.836px;
-	}
-	#Lorem_ipsum_dolor_sit_amet__co {
-		position: absolute;
-		left: 1.5px;
-		top: 79.066px;
-		overflow: visible;
-		width: 269.297px;
-		height: 129.331px;
-		line-height: 24px;
-		margin-top: -5px;
-		text-align: left;
-		font-family: Lato-Regular;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 14px;
-		color: rgba(161,177,188,1);
-	}
-	#LEAR_MORE_ {
-		position: absolute;
-		left: 1.5px;
-		top: 185.066px;
-		overflow: visible;
-		width: 269.297px;
-		height: 129.331px;
-		line-height: 24px;
-		margin-top: -5px;
-		text-align: left;
-		font-family: Lato-Black;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 14px;
-		color: rgba(26,188,156,1);
-	}
-	#Bottom_bar {
-		position: absolute;
-		width: 1920px;
-		height: 101px;
-		left: 0px;
-		top: 467px;
-		overflow: visible;
-	}
-	#Background_le {
-		position: absolute;
-		width: 1920px;
-		height: 101px;
-		left: 0px;
-		top: 0px;
-		overflow: visible;
-	}
-	.background {
-		position: absolute;
-		overflow: visible;
-		width: 1920px;
-		height: 100px;
-		left: 0px;
-		top: 1px;
-	}
-	.Shape_181 {
-		position: absolute;
-		overflow: visible;
-		width: 1920px;
-		height: 1px;
-		left: 0px;
-		top: 0px;
-	}
-	#bottom-right {
-		position: absolute;
-		left: 1083.037px;
-		top: 41.018px;
-		overflow: visible;
-		width: 114px;
-		white-space: nowrap;
-		line-height: 50px;
-		margin-top: -17px;
-		text-align: right;
-		font-family: ElegantIcons;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 16px;
-		color: rgba(161,177,188,1);
-	}
-	#BOTTOM-TEXT {
-		position: absolute;
-		left: 144.422px;
-		top: 40.578px;
-		overflow: visible;
-		width: 493px;
-		white-space: nowrap;
-		line-height: 24px;
-		margin-top: -4.5px;
-		text-align: left;
-		font-family: Lato-Regular;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 15px;
-		color: rgba(161,177,188,1);
-	}
-    @media only screen and (max-width: 1060px) {
-  body {
-    background-color: lightblue;
-  	}
-  #FOOTER_STYLE{
-	  display: flex;
-	  flex-direction: row;
-	  justify-content: center;
-	  flex-wrap: wrap;
-  }
+
+#Title_k {
+    position: absolute;
+    width: 176px;
+    height: 28.914px;
+    left: 0px;
+    top: 0px;
+    overflow: visible;
+}
+
+#ABOUT_THEFOX {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    overflow: visible;
+    width: 177px;
+    white-space: nowrap;
+    line-height: 24px;
+    margin-top: -4px;
+    text-align: left;
+    font-family: Lato-Black;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 1);
+    letter-spacing: 3px;
+}
+
+.Rectangle_32_k {
+    position: absolute;
+    overflow: visible;
+    width: 70px;
+    height: 3px;
+    left: 0.578px;
+    top: 25.914px;
+}
+
+#Post_k {
+    position: absolute;
+    width: 270px;
+    height: 314.397px;
+    left: 0.578px;
+    top: 64.078px;
+    overflow: visible;
+}
+
+#Designed_by_Tam_Tran_The_Best_ {
+    position: absolute;
+    left: 0.25px;
+    top: 0px;
+    overflow: visible;
+    width: 232px;
+    white-space: nowrap;
+    line-height: 24px;
+    margin-top: -4px;
+    text-align: left;
+    font-family: Lato-Bold;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: rgba(236, 240, 241, 1);
+}
+
+#Shape_180_la {
+    opacity: 0.502;
+}
+
+.Shape_180_la {
+    position: absolute;
+    overflow: visible;
+    width: 270px;
+    height: 1px;
+    left: 0px;
+    top: 62.836px;
+}
+
+#Lorem_ipsum_dolor_sit_amet__co {
+    position: absolute;
+    left: 1.5px;
+    top: 79.066px;
+    overflow: visible;
+    width: 269.297px;
+    height: 129.331px;
+    line-height: 24px;
+    margin-top: -5px;
+    text-align: left;
+    font-family: Lato-Regular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: rgba(161, 177, 188, 1);
+}
+
+#LEAR_MORE_ {
+    position: absolute;
+    left: 1.5px;
+    top: 185.066px;
+    overflow: visible;
+    width: 269.297px;
+    height: 129.331px;
+    line-height: 24px;
+    margin-top: -5px;
+    text-align: left;
+    font-family: Lato-Black;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: rgba(26, 188, 156, 1);
+}
+
+#Bottom_bar {
+    position: absolute;
+    width: 1920px;
+    height: 101px;
+    left: 0px;
+    top: 467px;
+    overflow: visible;
+}
+
+#Background_le {
+    position: absolute;
+    width: 1920px;
+    height: 101px;
+    left: 0px;
+    top: 0px;
+    overflow: visible;
+}
+
+.background {
+    position: absolute;
+    overflow: visible;
+    width: 1920px;
+    height: 100px;
+    left: 0px;
+    top: 1px;
+}
+
+.Shape_181 {
+    position: absolute;
+    overflow: visible;
+    width: 1920px;
+    height: 1px;
+    left: 0px;
+    top: 0px;
+}
+
+#bottom-right {
+    position: absolute;
+    left: 1083.037px;
+    top: 41.018px;
+    overflow: visible;
+    width: 114px;
+    white-space: nowrap;
+    line-height: 50px;
+    margin-top: -17px;
+    text-align: right;
+    font-family: ElegantIcons;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: rgba(161, 177, 188, 1);
+}
+
+#BOTTOM-TEXT {
+    position: absolute;
+    left: 144.422px;
+    top: 40.578px;
+    overflow: visible;
+    width: 493px;
+    white-space: nowrap;
+    line-height: 24px;
+    margin-top: -4.5px;
+    text-align: left;
+    font-family: Lato-Regular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    color: rgba(161, 177, 188, 1);
+}
+
+@media only screen and (max-width: 1060px) {
+    body {
+        background-color: lightblue;
+    }
+    #FOOTER_STYLE {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
 }
