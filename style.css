@@ -1,12 +1,15 @@
-/* mis en place des police */
+
+
+/* mise en place des police */
+
 
 @font-face {
     font-family: "Lato-Bold";
     src: local("Lato-Bold");
     font-family: "Lato-Regular";
     src: local("Lato-Regular");
-   
-}
+}  
+  
 
 #menu1 {
     font-family: "Lato-Bold";
@@ -15,12 +18,16 @@
 #menu3 h1 {
     font-family: "Lato-Regular"
 }
+ /* fin police */
+
+/*media queries */
+
+
+/* pour tablette */
+@media screen and (max-width: 1024px) {}
 
 
 
-
-
-/* fin css des police  */
 
 * {
     margin: 0;
@@ -30,16 +37,18 @@
 }
 
 #menu1>h1 {
-    font-size: 13px;
-    margin-left: 20rem;
+    font-size: 16px;
+    margin-left: 12rem;
+    display: flex;
+    flex-direction: row;
 }
 
 .arrow {
     border: solid black;
     border-width: 0 3px 3px 0;
     display: inline-block;
-    padding: 5px;
-    margin-left: 3rem;
+    padding: 3px;
+    margin-left: 6rem;
 }
 
 .down {
@@ -78,7 +87,7 @@
 #LineMenu li a :hover {
     color: #159880;
 }
-
+ /* icones */
  .fab {
      margin: 5px;
  }
@@ -87,7 +96,7 @@
 }
 
 
-/*partie2 */
+/*partie2 et 3 */
 
 #menu2 {
     position: absolute;
@@ -95,10 +104,7 @@
     height: 100px;
     background-color: rgba(255, 255, 255, 1);
     overflow: hidden;
-    /*	--web-view-name: 06-Prices; 
-	--web-view-id: ID06_Prices;
-	--web-scale-on-resize: true;
-	--web-enable-deep-linking: true;*/
+    
 }
 
 #MenuBar {
@@ -174,7 +180,7 @@ ul li {
 }
 
 
-/* partie 3 */
+
 
 #menu3 {
     position: absolute;
@@ -202,6 +208,22 @@ ul li {
     margin-left: 12rem;
 }
 
+#LineMenu2> ul>li {
+    list-style-type: none;
+    
+   
+    overflow: visible;
+    white-space: nowrap;
+    line-height: 21px;
+    margin-top: -2.5px;
+    text-align: left;
+    color: rgba(91, 87, 102, 1);
+    word-spacing: 2rem;
+    font-family: Nunito-Regular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+}
 
 /* partie footer */
 
@@ -271,7 +293,7 @@ ul li {
     overflow: visible;
 }
 
-#Amazing_Standard_Post_26_May__ {
+#description {
     position: absolute;
     left: 0.25px;
     top: 0px;
@@ -310,7 +332,7 @@ ul li {
     overflow: visible;
 }
 
-#Amazing_Text_Post_26_May__2017 {
+#description2 {
     position: absolute;
     left: 0.25px;
     top: 0px;
@@ -327,9 +349,7 @@ ul li {
     color: rgba(26, 188, 156, 1);
 }
 
-#Shape_180_kd {
-    opacity: 0.502;
-}
+
 
 .Shape_180_kd {
     position: absolute;
@@ -349,7 +369,7 @@ ul li {
     overflow: visible;
 }
 
-#Amazing_Video_Post_26_May__201 {
+#description3 {
     position: absolute;
     left: 0px;
     top: 0px;
@@ -420,7 +440,7 @@ ul li {
     overflow: visible;
 }
 
-#Tran_Mau_Tri_Tam_On_Blog_Title {
+#description4 {
     position: absolute;
     left: 0.25px;
     top: 0px;
@@ -437,9 +457,7 @@ ul li {
     color: rgba(236, 240, 241, 1);
 }
 
-#Shape_180_km {
-    opacity: 0.502;
-}
+
 
 .Shape_180_km {
     position: absolute;
@@ -459,7 +477,7 @@ ul li {
     overflow: visible;
 }
 
-#Sam_Isbister_On_Blog_Title_Ama {
+#description5 {
     position: absolute;
     left: 0.25px;
     top: 0px;
@@ -476,9 +494,7 @@ ul li {
     color: rgba(236, 240, 241, 1);
 }
 
-#Shape_180_kp {
-    opacity: 0.502;
-}
+
 
 .Shape_180_kp {
     position: absolute;
@@ -489,7 +505,7 @@ ul li {
     top: 62.836px;
 }
 
-#Post_copy_2_kq {
+#col2 {
     position: absolute;
     width: 182px;
     height: 43px;
@@ -498,7 +514,7 @@ ul li {
     overflow: visible;
 }
 
-#Wjnd_Baby_On_Blog_Title_Amazin {
+#description6 {
     position: absolute;
     left: 0px;
     top: 0px;
@@ -569,7 +585,7 @@ ul li {
     overflow: visible;
 }
 
-#March_2017_1509_Posted {
+#description7 {
     position: absolute;
     left: 0.25px;
     top: 0px;
@@ -852,14 +868,3 @@ ul li {
     color: rgba(161, 177, 188, 1);
 }
 
-@media only screen and (max-width: 1060px) {
-    body {
-        background-color: lightblue;
-    }
-    #FOOTER_STYLE {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-}
