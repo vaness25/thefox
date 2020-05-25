@@ -127,7 +127,15 @@ a
 }
 .photo p
 {
-    color : var(--invisible-color);
+    color : var(--invisible-color);   
+}
+.photo p:last-child
+{
+    margin-top: 0px;
+}
+.photo p:nth-last-child(2)
+{
+    margin-bottom: 0px;
 }
 .photo a
 {
@@ -138,7 +146,7 @@ a
     height:2rem;
     border: 0.2rem solid var(--invisible-color);
     display: inline-block;
-    margin-top: 2rem;
+    margin-top: 20%;
     margin-left : 1rem;
     margin-right : 1rem;
     line-height: 1.5;
@@ -156,6 +164,14 @@ a
 {
     color : var(--invisible-color);
 }
+.photo-portrait p:last-child
+{
+    margin-top: 0px;
+}
+.photo-portrait p:nth-last-child(2)
+{
+    margin-bottom: 0px;
+}
 .photo-portrait a
 {
     display: block;
@@ -165,7 +181,7 @@ a
     height:2rem;
     border: 0.2rem solid var(--invisible-color);
     display: inline-block;
-    margin-top: 3rem;
+    margin-top: 25%;
     margin-left : 1.5rem;
     margin-right : 1.5rem;
     line-height: 1.5;
@@ -173,7 +189,7 @@ a
 audio
 {
     display : block;
-    background-color: var(--bg-audio);
+    background-color: #1b1c1d;
     padding : 1rem;
     margin-top: 1rem;
     max-width: 100%;
