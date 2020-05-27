@@ -9,6 +9,63 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header><!--Vanessa-->
+        <header class="container">
+            <div class="flex-container1 separation"><!--****************************Barre du Haut**************************************-->
+                <p class="langages">Choose your Language<i class="fas fa-chevron-down"></i></p>
+               <div class="flex-container1"> <p><img src="media/carte.png" alt="acheter" width="96" height="30"></p>
+                <ul class="flex-container1">
+                    <li><i class="fab fa-facebook-f"></i></li>
+                    <li><i class="fab fa-twitter"></i></li>
+                    <li><i class="fab fa-tumblr"></i></li>
+                    <li><i class="fab fa-vimeo-v"></i></li>
+                    <li><i class="fab fa-linkedin-in"></i></li>
+                    <li><i class="fas fa-basketball-ball"></i></li>
+                    <li><i class="fas fa-signal"></i></li>   
+                </ul>
+                </div>
+            </div>
+                <!--******************Barre du centre***********************************************-->                           <!--*********************************Barre du centre***********************************************-->  
+                <div class="topnav" id="navbar">
+           
+                    <div class= "flex-container1 separation" >
+        
+                        <h1><img src="media/fox.png" alt="logo" width="40" height="45">the<span>fox</span> </h1>
+                        <nav >
+                            <ul id="navbar-parent" class="flex-menu padding-right navbar-parent">
+            
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Pages</a></li>
+                                <li><a href="#">Services</a></li>
+                                <li><a href="#">Portfolio</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Shop</a></li>
+                                <li><a href="#">ShopTravel</a></li>
+                                <li><a href="#">Features</a></li>
+                                <li><a href="#">Contact</a></li>
+                            <li> <a href="#" class="icon_search"></a> </li>
+                                
+                                <li><a href="javascript:void(0);" class="icon" onclick="navbarDropdown()">
+                                    <i class="fa fa-bars"></i>
+                                    </a></li>
+                            </ul> 
+                        </nav>
+                    </div> 
+                </div> 
+            </div>
+            <div class= "flex-container1 separation"><!--*********************************Barre du Bas***********************************************-->
+                <h2 class="masonry">Blog Masonry Style</h2>
+                <ul class= "flex-menu2">
+                    <li>Home</li>
+                    <li><i class="fas fa-chevron-right"></i>  </li>
+                    <li>Blog</li>
+                    <li>  <i class="fas fa-chevron-right"></i>  </li>
+                    <li>Masonry</li>
+                    
+                </ul>
+            </div>
+        </header>  
+    </header>
     <main> <!--------------------------------------------------Section Lisa---------------------------------------------->
         <!------------------------Création du main, 3 colones de blocs articles.
             Les colones sont nommées 1,2 et 3  et les bloc par ordre alphabetique (en recommençant à A  dans chaque colones).--------------------->
@@ -22,7 +79,7 @@
                             <p class="invisible-hover"> Standard Post Style</p>
                             <p class="invisible-hover">Creative and design</p>
                         </div>
-                        <h2 class="titre-blog">Amazing Standard Blog Post</h2>
+                        <h2 class="titre-blog">Amazing Standard Blog Post<span id="loupe"></span></h2>
                     </header>
                     <div class="auteur">
                         <p><a href="#">By Tran Mau Tri Tam</a></p>
@@ -312,5 +369,11 @@
 
         </div>
     </main><!--*************************************Fin De Section Lisa-->
+    <footer><!--Vanessa-->
+
+    </footer>
+    <script src="https://kit.fontawesome.com/5458cc12a8.js" crossorigin="anonymous"></script>
+    <script src="scripts/hidden-menu.js"></script>
 </body>
+
 </html>
